@@ -7,6 +7,8 @@
 body {
     margin: 0;
     padding: 0;
+    justify-content: center;
+    background-color: rgb(28, 28, 28); /* Aggiunto colore di sfondo al body */
 }
 
 /* Stile generale dell'app */
@@ -19,6 +21,7 @@ body {
     min-height: 100vh;
 }
 
+
 /* Stile del contenitore principale */
 .parent-container {
     background-color: rgb(39, 37, 37);
@@ -29,13 +32,15 @@ body {
 .container {
     box-shadow: 0px 0px 15px 10px #2fcdb533;
     background-color: rgb(28, 28, 28);
-    width: 40%;
-    height: 80vh;
+    width: 80%; /* Ridotto la larghezza del container al 80% */
+    margin: 20px auto; /* Centrato il container orizzontalmente e aggiunto spazio superiore e inferiore */
+    padding: 20px; /* Aggiunto padding per spaziare il contenuto dai bordi */
 }
+
 
 /* Stile del titolo */
 .title {
-    margin: 34px 0;
+    margin: 0 0 20px; /* Modificato il margine del titolo */
     text-align: center;
 }
 
@@ -47,6 +52,36 @@ body {
 
 /* Stile dell'input BMI */
 .bmi-input {
-    width: 80%;
+    width: 100%; /* Fatto occupare tutto lo spazio disponibile */
     height: 30px;
+    margin-bottom: 10px; /* Aggiunto margine inferiore per separare gli input */
+}
+
+/* Stile dei bottoni */
+.btn {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px; /* Aggiunto margine destro per separare i pulsanti */
+    cursor: pointer;
+}
+
+.btn-reload {
+    background-color: #f44336;
+}
+
+/* Stile del risultato */
+.result {
+    margin-top: 20px; /* Aggiunto margine superiore al risultato */
+    text-align: center;
+}
+
+.p-msg {
+    font-size: 18px;
+    color: #ff0000; /* Colore rosso per il messaggio di testo */
 }
